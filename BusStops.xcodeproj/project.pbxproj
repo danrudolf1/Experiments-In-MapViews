@@ -21,6 +21,8 @@
 		26C741141936617900BE1A15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C740F61936617900BE1A15 /* UIKit.framework */; };
 		26C7411C1936617900BE1A15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C7411A1936617900BE1A15 /* InfoPlist.strings */; };
 		26C7411E1936617900BE1A15 /* BusStopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C7411D1936617900BE1A15 /* BusStopsTests.m */; };
+		26C741281936629B00BE1A15 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C741271936629B00BE1A15 /* MapKit.framework */; };
+		26C7412B193666EC00BE1A15 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C7412A193666EC00BE1A15 /* BusStop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		26C741191936617900BE1A15 /* BusStopsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusStopsTests-Info.plist"; sourceTree = "<group>"; };
 		26C7411B1936617900BE1A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26C7411D1936617900BE1A15 /* BusStopsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusStopsTests.m; sourceTree = "<group>"; };
+		26C741271936629B00BE1A15 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		26C74129193666EC00BE1A15 /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStop.h; sourceTree = "<group>"; };
+		26C7412A193666EC00BE1A15 /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C741281936629B00BE1A15 /* MapKit.framework in Frameworks */,
 				26C740F51936617900BE1A15 /* CoreGraphics.framework in Frameworks */,
 				26C740F71936617900BE1A15 /* UIKit.framework in Frameworks */,
 				26C740F31936617900BE1A15 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		26C740F11936617900BE1A15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26C741271936629B00BE1A15 /* MapKit.framework */,
 				26C740F21936617900BE1A15 /* Foundation.framework */,
 				26C740F41936617900BE1A15 /* CoreGraphics.framework */,
 				26C740F61936617900BE1A15 /* UIKit.framework */,
@@ -112,11 +119,13 @@
 		26C740F81936617900BE1A15 /* BusStops */ = {
 			isa = PBXGroup;
 			children = (
-				26C741011936617900BE1A15 /* AppDelegate.h */,
-				26C741021936617900BE1A15 /* AppDelegate.m */,
 				26C741041936617900BE1A15 /* Main.storyboard */,
 				26C741071936617900BE1A15 /* ViewController.h */,
 				26C741081936617900BE1A15 /* ViewController.m */,
+				26C74129193666EC00BE1A15 /* BusStop.h */,
+				26C7412A193666EC00BE1A15 /* BusStop.m */,
+				26C741011936617900BE1A15 /* AppDelegate.h */,
+				26C741021936617900BE1A15 /* AppDelegate.m */,
 				26C7410A1936617900BE1A15 /* Images.xcassets */,
 				26C740F91936617900BE1A15 /* Supporting Files */,
 			);
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C7412B193666EC00BE1A15 /* BusStop.m in Sources */,
 				26C741091936617900BE1A15 /* ViewController.m in Sources */,
 				26C741031936617900BE1A15 /* AppDelegate.m in Sources */,
 				26C740FF1936617900BE1A15 /* main.m in Sources */,
